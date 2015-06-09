@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    <script src='webtorrent.js'></script>
+    <script src="EventEmitter.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js'></script>
+    <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css' type='text/css' rel="stylesheet" />
+    <script src="peersurf.js"></script>
+</head>
+
+<body>
+    <div class='container'>
+        <div class='row'>
+            <br><br>
+            <h5>Loading page content via peer to peer</h5>
+            <h6>Powered by <a href='https://github.com/feross/webtorrent'>
+                <img src='https://github.com/feross/webtorrent/blob/master/img/wordmark.png?raw=true' width='100px' />
+                </a></h6>
+            <br>
+            <p>Every visitor to this webpage (from a WebRTC supporting browser) helps deliver the resources (images / text / video) on this page.</p>
+            <p>Lets try loading a few things.</p>
+            <br><br>
+            <h5>- Lets load a video via P2P</h5>
+            <br>
+            <video data-peer="1acbc3d17b0c1dbf934e90ceac64a7c3d54e4d08" data-peer-file="vid.webm" width="500px" controls></video>
+            <br>
+            <h5>- Lets try some text</h5>
+            <br>
+            <blockquote><div data-peer="1acbc3d17b0c1dbf934e90ceac64a7c3d54e4d08" data-peer-file="test.txt"></div></blockquote>
+            <br><br>
+            <h5>- To finish off this quick demo, lets load a few images (Source: https://www.flickr.com/photos/scotbot)</h5>
+            <br><br>
+        </div>
+        <div class='row'>
+            <div class='col-sm-4'>
+                <img data-peer="1acbc3d17b0c1dbf934e90ceac64a7c3d54e4d08" data-peer-file="img1.jpg" width='100%' />
+            </div>
+            <div class='col-sm-4'>
+                <img data-peer="1acbc3d17b0c1dbf934e90ceac64a7c3d54e4d08" data-peer-file="img2.jpg" width='100%' />
+            </div>
+            <div class='col-sm-4'>
+                <img data-peer="1acbc3d17b0c1dbf934e90ceac64a7c3d54e4d08" data-peer-file="img3.jpg" width='100%' />
+            </div>
+        </div>
+    </div>
+
+    <script>
+        PeerSurf.init();
+    </script>
+</body>
+
+</html>
