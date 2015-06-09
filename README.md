@@ -4,7 +4,7 @@ PeerSurf is a demo (and kind of a library) of P2P websites powered by [WebTorren
 
 **Want to give it a shot?**
 
-Demo here - http://matthaywardwebdesign.github.io/peersurf
+Demo here - http://matthaywardwebdesign.github.io/PeerSurf
 
 **How to use the library**
 
